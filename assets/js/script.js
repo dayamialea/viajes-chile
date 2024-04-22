@@ -1,7 +1,12 @@
-const nav = document.getElementById("nav");
-
+// scroll 
 window.addEventListener("scroll", () => {
-    window.scrollY > 30
-        ? nav.classList.add("bg-dark")
-        : nav.classList.remove("bg-dark")
-})
+    const nav = document.getElementById('nav');
+    (window.scrollY > 40)
+      ? nav.style.background = "#000"
+      : nav.style.background = "transparent"
+  })
+
+  $(document).ready(function () {
+    // habilitar todos los tooltip de bootstrap
+    $('[data-bs-toggle="tooltip"]').tooltip()
+  })

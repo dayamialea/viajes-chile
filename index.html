@@ -187,14 +187,49 @@
       </div>
     </div>
 </section>
-
-
     <!-- Sección de formulario de contacto -->
-    <section id="contacto" class="contacto">
-        <div class="container">
-            <!-- Aquí va el formulario de contacto -->
+<section class="py-5 container text-light" id="contacto">
+    <h2 class="text-center text-uppercase my-3">Contacto</h2>
+    <hr class="text-secondary mb-4">
+    <div class="row">
+        <div class="col-10 col-lg-12 mx-auto">
+            <form action="" id="formulario" class="mt-4">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input id="nombre" type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input id="asunto" type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" cols="30" rows="10" class="form-control" required></textarea>
+                </div>
+                <button class="btn btn-info text-light" data-bs-toggle="tooltip"
+                    data-bs-title="Enviar mensaje">Enviar</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- POPUP -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="popup" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="assets/img/viajes.svg" class="rounded me-2" alt="icono" height="20">
+        <strong class="me-auto text-uppercase">Información</strong>
+        <small id="date"></small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body text-secondary">
+        Se envió su correo exitosamente
+        <i class="fa-solid fa-envelope fa-bounce text-success"
+          style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i>
+      </div>
+</div>
+</div>
+
 
     <!-- Footer -->
     <footer class="footer">
